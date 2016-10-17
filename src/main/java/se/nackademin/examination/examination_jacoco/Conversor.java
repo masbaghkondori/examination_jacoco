@@ -17,7 +17,9 @@ public class Conversor {
 	public void setGenderConverterArrayValues(){
 		this.genderConverterArray.add("man!");
 		this.genderConverterArray.add("woman!");
-		this.genderConverterArray.add("person!");		
+		this.genderConverterArray.add("person!");	
+	
+
 	}
 	
 	public void setAgeConverterArrayValues(){
