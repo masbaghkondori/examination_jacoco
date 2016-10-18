@@ -20,7 +20,6 @@ public class DataAnalysisTest {
 		
 		Game game = new Game();
 		assertEquals (dataAnalysis.getResultStringNamesAndAge(values),"The first name is greater or equals in size to the last name and the participant older than 30");
-		
 		assertEquals (dataAnalysis.getResulStringHomecityAndAge(values),"The name of the homecity is big and the participant is 30 or older");
 	
 	}

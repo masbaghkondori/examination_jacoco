@@ -84,10 +84,10 @@ public class Game {
 		}
 	}
 
-	public int calculateOutPutBasedOnGender(char gender) {
-		if (gender == 'M') {
+	public int calculateOutPutBasedOnGender(char c) {
+		if (c == 'M') {
 			return 0;
-		}if (gender == 'F') {
+		}if (c == 'F') {
 			return 1;
 		}
 		return 2;
