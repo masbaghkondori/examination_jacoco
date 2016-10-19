@@ -8,6 +8,22 @@ import java.util.Arrays;
 import org.junit.Test;
 
 public class GameTest {
+	/*public void run(ArrayList<String> values){
+		DataAnalysis dataAnalysis = new DataAnalysis();
+		getGenderFromInputValues(values);
+		getAgeFromInputValues(values);		
+		System.out.println(dataAnalysis.buildFinalString(values));
+		runGame(values.get(0),values.get(1),values.get(2),getGenderFromInputValues(values),getAgeFromInputValues(values),values.get(5));
+	}*/
+	@Test
+	public void test_run() {
+		Game game = new Game();
+		ArrayList<String> values = new ArrayList<String>();
+		
+		values.addAll(Arrays.asList("Game", "Rafael", "Silva", "M", "30", "Fortaleza"));
+		game.run(values);
+		
+	}
 
 
 
@@ -90,7 +106,8 @@ public class GameTest {
 
 		assertEquals("The result should be 5", game.calculateOutPutBasedOnHomeCity("Istambul"), 8);
 		assertEquals("The result should be 5", game.calculateOutPutBasedOnHomeCity("jakarta"), 9);
-		assertEquals("The result should be 5", game.calculateOutPutBasedOnHomeCity("Malmö"), 10);
+		assertEquals("The result should be 5", game.calculateOutPutBasedOnHomeCity("Malmö"), 10);  
+		
 
 	}
 

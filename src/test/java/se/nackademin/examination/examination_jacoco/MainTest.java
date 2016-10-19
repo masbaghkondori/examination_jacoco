@@ -1,4 +1,4 @@
-package se.nackademin.examination.examination_jacoco;
+ 		package se.nackademin.examination.examination_jacoco;
 
 import org.junit.Test;
 
