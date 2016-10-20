@@ -8,13 +8,7 @@ import java.util.Arrays;
 import org.junit.Test;
 
 public class GameTest {
-	/*public void run(ArrayList<String> values){
-		DataAnalysis dataAnalysis = new DataAnalysis();
-		getGenderFromInputValues(values);
-		getAgeFromInputValues(values);		
-		System.out.println(dataAnalysis.buildFinalString(values));
-		runGame(values.get(0),values.get(1),values.get(2),getGenderFromInputValues(values),getAgeFromInputValues(values),values.get(5));
-	}*/
+	
 	@Test
 	public void test_run() {
 		Game game = new Game();
@@ -22,10 +16,7 @@ public class GameTest {
 		
 		values.addAll(Arrays.asList("Game", "Rafael", "Silva", "M", "30", "Fortaleza"));
 		game.run(values);
-		
-	}
-
-
+		}
 
 	@Test
 	public void test_calculateOutPutBasedOnNames() {
@@ -46,11 +37,11 @@ public class GameTest {
 		Game game = new Game();
 
 		ArrayList<String> arrayOfInputs1 = new ArrayList<String>();
-		arrayOfInputs1.addAll(Arrays.asList("mm","Sara", "jalali", "F", "25", "Stockholm"));
+		arrayOfInputs1.addAll(Arrays.asList("Game","Sara", "jalali", "F", "25", "Stockholm"));
 		assertEquals(game.getGenderFromInputValues(arrayOfInputs1), 'F');
 		
 		ArrayList<String> arrayOfInputs2 = new ArrayList<String>();
-		arrayOfInputs2.addAll(Arrays.asList("kjk","Reza", "jalali", "M", "25", "Stockholm"));
+		arrayOfInputs2.addAll(Arrays.asList("play","Reza", "jalali", "M", "25", "Stockholm"));
 		assertEquals(game.getGenderFromInputValues(arrayOfInputs2), 'M');
 		
 	}
@@ -60,11 +51,9 @@ public class GameTest {
 		Game game = new Game();
 
 		ArrayList<String> arrayOfInputs = new ArrayList<String>();
-		arrayOfInputs.addAll(Arrays.asList("kjk","Sara", "jalali", "F", "25", "Stockholm"));
+		arrayOfInputs.addAll(Arrays.asList("play","Sara", "jalali", "F", "25", "Stockholm"));
 		assertEquals("The result should be 25", game.getAgeFromInputValues(arrayOfInputs), 25);
-		/*arrayOfInputs.addAll(Arrays.asList("Sara", "jalali", "F", "35", "Stockholm"));
-		assertEquals("The result should be 25", game.getAgeFromInputValues(arrayOfInputs), 1);*/
-	}
+			}
 
 	@Test
 	public void test_calculateOutPutBasedOnGender() {
@@ -87,7 +76,6 @@ public class GameTest {
 		
 		int b = game.calculateOutPutBasedOnAge(30);
 		assertEquals("The result should be 1", b, 1);
-
 	}
 
 	@Test
@@ -107,9 +95,5 @@ public class GameTest {
 		assertEquals("The result should be 5", game.calculateOutPutBasedOnHomeCity("Istambul"), 8);
 		assertEquals("The result should be 5", game.calculateOutPutBasedOnHomeCity("jakarta"), 9);
 		assertEquals("The result should be 5", game.calculateOutPutBasedOnHomeCity("Malmö"), 10);  
-		
-
-	}
-
-
+		}
 }

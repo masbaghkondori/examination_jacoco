@@ -17,9 +17,9 @@ import java.util.ArrayList;
 	
 	public String getResultStringNamesAndAge(ArrayList&lt;String&gt; values){
 <span class="fc" id="L19">		Game game = new Game();</span>
-<span class="pc bpc" id="L20" title="1 of 4 branches missed.">		if (values.get(1).length()&lt;=values.get(2).length() &amp;&amp; game.getAgeFromInputValues(values)&lt;30){</span>
+<span class="fc bfc" id="L20" title="All 4 branches covered.">		if (values.get(1).length()&lt;=values.get(2).length() &amp;&amp; game.getAgeFromInputValues(values)&lt;30){</span>
 <span class="fc" id="L21">			return &quot;The first name is smaller or equals in size to the last name and the participant is 30 or younger&quot;;</span>
-<span class="pc bpc" id="L22" title="1 of 4 branches missed.">		} if (values.get(1).length()&gt;values.get(2).length() &amp;&amp; game.getAgeFromInputValues(values)&gt;=30){</span>
+<span class="fc bfc" id="L22" title="All 4 branches covered.">		} if (values.get(1).length()&gt;values.get(2).length() &amp;&amp; game.getAgeFromInputValues(values)&gt;=30){</span>
 <span class="fc" id="L23">			return &quot;The first name is greater or equals in size to the last name and the participant older than 30&quot;;</span>
 		}
 		
